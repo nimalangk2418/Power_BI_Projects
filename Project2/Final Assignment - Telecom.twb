@@ -1,0 +1,1281 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='WA_Fn-UseC_-Telco-Customer-Chur (WA_Fn-UseC_-Telco-Customer-Churn)' inline='true' name='federated.08bp9e60kr6bt31cvcfx30rwfz0x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WA_Fn-UseC_-Telco-Customer-Churn' name='excel-direct.1fz4jb31yr0nme0zw7n6x0t5vger'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/nimal/Downloads/Tableau/Assignment/Telecom+Customer+Churn/WA_Fn-UseC_-Telco-Customer-Churn.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fz4jb31yr0nme0zw7n6x0t5vger' name='WA_Fn-UseC_-Telco-Customer-Chur' table='[&apos;WA_Fn-UseC_-Telco-Customer-Chur$&apos;]' type='table'>
+          <columns gridOrigin='A1:U7044:no:A1:U7044:0' header='yes' outcome='6'>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U7044:no:A1:U7044:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Chur]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Years' datatype='real' name='[Calculation_325948043105865731]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [tenure] &lt;= 12 THEN [tenure]*0.01&#13;&#10;ELSE ROUND(DIV([tenure],12),1) END' />
+      </column>
+      <column caption='Months' datatype='integer' name='[Calculation_325948043109773316]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [tenure]%12 == 0 THEN 12 &#13;&#10;ELSE [tenure]%12 &#13;&#10;END' />
+      </column>
+      <column caption='Monthly Expendure' datatype='real' name='[Calculation_325948043111231493]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[MonthlyCharges] * [Calculation_325948043109773316]' />
+      </column>
+      <column caption='Total Spending ' datatype='real' name='[Calculation_325948043111333894]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[TotalCharges] - [Calculation_325948043111231493]' />
+      </column>
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='measure' type='quantitative' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <column caption='WA_Fn-UseC_-Telco-Customer-Chur' datatype='table' name='[__tableau_internal_object_id__].[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nimal/AppData/Local/Temp/TableauTemp/#TableauTemp_1kaotul10v82v910mjo9g1su2jtw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/30/2024 08:05:47 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7043</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1383</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4976</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Chur</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='customerID' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='SeniorCitizen' />
+        <field-sort-custom-order field='Partner' />
+        <field-sort-custom-order field='Dependents' />
+        <field-sort-custom-order field='tenure' />
+        <field-sort-custom-order field='Calculation_325948043109773316' />
+        <field-sort-custom-order field='Calculation_325948043105865731' />
+        <field-sort-custom-order field='PhoneService' />
+        <field-sort-custom-order field='MultipleLines' />
+        <field-sort-custom-order field='InternetService' />
+        <field-sort-custom-order field='OnlineSecurity' />
+        <field-sort-custom-order field='OnlineBackup' />
+        <field-sort-custom-order field='DeviceProtection' />
+        <field-sort-custom-order field='TechSupport' />
+        <field-sort-custom-order field='StreamingTV' />
+        <field-sort-custom-order field='StreamingMovies' />
+        <field-sort-custom-order field='Contract' />
+        <field-sort-custom-order field='PaperlessBilling' />
+        <field-sort-custom-order field='PaymentMethod' />
+        <field-sort-custom-order field='MonthlyCharges' />
+        <field-sort-custom-order field='Calculation_325948043111231493' />
+        <field-sort-custom-order field='Calculation_325948043111333894' />
+        <field-sort-custom-order field='TotalCharges' />
+        <field-sort-custom-order field='Churn' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='WA_Fn-UseC_-Telco-Customer-Chur' id='WA!Fn-UseC!-Telco-Customer-Chur_5DEC1E283FF447A9A22DB559A7A1089E'>
+            <properties context=''>
+              <relation connection='excel-direct.1fz4jb31yr0nme0zw7n6x0t5vger' name='WA_Fn-UseC_-Telco-Customer-Chur' table='[&apos;WA_Fn-UseC_-Telco-Customer-Chur$&apos;]' type='table'>
+                <columns gridOrigin='A1:U7044:no:A1:U7044:0' header='yes' outcome='6'>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Monthly Customer Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Chur (WA_Fn-UseC_-Telco-Customer-Churn)' name='federated.08bp9e60kr6bt31cvcfx30rwfz0x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08bp9e60kr6bt31cvcfx30rwfz0x'>
+            <column caption='Months' datatype='integer' name='[Calculation_325948043109773316]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [tenure]%12 == 0 THEN 12 &#13;&#10;ELSE [tenure]%12 &#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_325948043109773316]' derivation='Count' name='[cnt:Calculation_325948043109773316:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_325948043109773316]' derivation='None' name='[none:Calculation_325948043109773316:ok]' pivot='key' type='ordinal' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08bp9e60kr6bt31cvcfx30rwfz0x].[cnt:Calculation_325948043109773316:qk]</rows>
+        <cols>[federated.08bp9e60kr6bt31cvcfx30rwfz0x].[none:Calculation_325948043109773316:ok]</cols>
+      </table>
+      <simple-id uuid='{F925CB0A-E8CC-44C4-A3B4-C63C9860753F}' />
+    </worksheet>
+    <worksheet name='Yearly Customers Rate '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Chur (WA_Fn-UseC_-Telco-Customer-Churn)' name='federated.08bp9e60kr6bt31cvcfx30rwfz0x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08bp9e60kr6bt31cvcfx30rwfz0x'>
+            <column caption='Years' datatype='real' name='[Calculation_325948043105865731]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [tenure] &lt;= 12 THEN [tenure]*0.01&#13;&#10;ELSE ROUND(DIV([tenure],12),1) END' />
+            </column>
+            <column-instance column='[Calculation_325948043105865731]' derivation='Count' name='[cnt:Calculation_325948043105865731:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_325948043105865731]' derivation='None' name='[none:Calculation_325948043105865731:ok]' pivot='key' type='ordinal' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08bp9e60kr6bt31cvcfx30rwfz0x].[cnt:Calculation_325948043105865731:qk]</rows>
+        <cols>[federated.08bp9e60kr6bt31cvcfx30rwfz0x].[none:Calculation_325948043105865731:ok]</cols>
+      </table>
+      <simple-id uuid='{EF0E0616-E3FB-4DF9-97BA-DE0135297E5B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Yearly Customers Rate '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08bp9e60kr6bt31cvcfx30rwfz0x].[none:Calculation_325948043105865731:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{434D0884-A214-48AB-AA37-980902F463AC}' />
+    </window>
+    <window class='worksheet' name='Monthly Customer Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6DA8AB6A-F68E-4F35-A41A-9696D448E41F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Monthly Customer Rate' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Yearly Customers Rate ' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
